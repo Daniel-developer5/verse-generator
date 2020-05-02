@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.verse-box {
+    color: #fff;
+    font-family: inherit;
+    font-size: 25px;
+    padding: 3px;
+    overflow-y: scroll;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.verse-box::-webkit-scrollbar {
+    opacity: 0;
+    width: 5px;
+}
+
+.verse-box::-webkit-scrollbar-track {
+    opacity: 0;
+}
+
+.verse-box::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #636369;
+}
+
+.verse-box::-webkit-scrollbar-thumb:hover {
+    background-color: #3a3a40;
+}
+
+.verse-box::-webkit-scrollbar-thumb:active {
+    background-color: #2c2c30;
+}
+
+.verse {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.verse-link {
+    display: flex;
+    justify-content: flex-end;
+}
