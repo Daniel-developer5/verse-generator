@@ -22,19 +22,13 @@ request.addEventListener('load', () => {
 })
 
 let randNum
-let prevNum
 
-function rand() {
-    randNum = Math.floor(Math.random() * (11 - 1) + 1)
-    if (randNum === prevNum) {
-        rand()
-    }
-    prevNum = randNum
+function rand(max) {
+    randNum = Math.floor(Math.random() * (max - 1) + 1)
 }
 
-rand()
-
 function fill(jsonObj) {
+    rand(+jsonObj['total'] - 7)
     verse.textContent = jsonObj[`verse${randNum}`]
     link.textContent = jsonObj[`link${randNum}`]
 }
