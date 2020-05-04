@@ -1,5 +1,12 @@
+let frameIn = document.getElementById("generator-insert")
+if (frameIn != null) {
+    frameIn.style.color = frameIn.dataset.color
+    frameIn.style.fontSize = frameIn.dataset.size
+    frameIn.style.fontFamily = frameIn.dataset.font
+}
+
 let requestURL = 'https://daniel-developer5.github.io/json-verses/verses.json'
-let request = new XMLHttpRequest
+let request = new XMLHttpRequest()
 
 let verse = document.querySelector(".verse")
 let link = document.querySelector(".verse-link")
