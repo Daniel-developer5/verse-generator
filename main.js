@@ -1,8 +1,9 @@
 let frameIn = document.getElementById("generator-insert")
+let verseBox = document.querySelector(".verse-box")
 if (frameIn != null) {
-    frameIn.style.color = frameIn.dataset.color
-    frameIn.style.fontSize = frameIn.dataset.size
-    frameIn.style.fontFamily = frameIn.dataset.font
+    verseBox.style.color = frameIn.dataset.color
+    verseBox.style.fontSize = frameIn.dataset.size
+    verseBox.style.fontFamily = frameIn.dataset.font
 }
 
 let requestURL = 'https://daniel-developer5.github.io/json-verses/verses.json'
