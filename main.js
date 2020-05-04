@@ -28,7 +28,7 @@ function rand(max) {
 }
 
 function fill(jsonObj) {
-    rand(+jsonObj['total'] - 7)
+    rand(+jsonObj['total'] + 1)
     verse.textContent = jsonObj[`verse${randNum}`]
     link.textContent = jsonObj[`link${randNum}`]
 }
