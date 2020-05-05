@@ -5,8 +5,7 @@ body {
 
 .verse-box {
     color: #fff;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     padding: 3px;
     overflow-y: scroll;
     position: absolute;
